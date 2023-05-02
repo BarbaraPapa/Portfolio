@@ -1,11 +1,8 @@
 
-
-
 // icons
-
-@mixin icon ($color, $bottom){
-    position: relative;
+@mixin icon ($color, $bottom){ 
     color: $color;
-    left: 23rem;
-    bottom: $bottom;   
+    bottom: $bottom;  
+    position: relative;
+    left: 23rem; 
   }
