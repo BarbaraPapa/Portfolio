@@ -1,4 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+footer ::-moz-placeholder {
+  font-family: "Barlow", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+footer ::placeholder, footer input,
+footer textarea, footer button {
+  font-family: "Barlow", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.card-4-container, .card-3-container, .card-2-container, .card-1-container {
+  box-shadow: 2px 2px 8px #11b7af;
+  background-color: rgba(3, 57, 54, 0.5);
+  width: 30rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.card-4-container p, .card-3-container p, .card-2-container p, .card-1-container p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.card-4-container .card-img, .card-3-container .card-img, .card-2-container .card-img, .card-1-container .card-img {
+  width: 20rem;
+}
+.card-4-container .card-img img, .card-3-container .card-img img, .card-2-container .card-img img, .card-1-container .card-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card-4-container button, .card-3-container button, .card-2-container button, .card-1-container button {
+  margin: 2rem auto;
+  padding: 0.5rem;
+  background-color: #405a96;
+  border: none;
+  border-radius: 5px;
+  width: 15rem;
+}
+.card-4-container button a, .card-3-container button a, .card-2-container button a, .card-1-container button a {
+  text-decoration: none;
+  color: #b2efec;
+  text-shadow: 1px 1px 5px black;
+  letter-spacing: 3px;
+}
+.card-4-container button:hover, .card-3-container button:hover, .card-2-container button:hover, .card-1-container button:hover {
+  animation-name: button;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes button {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  0% {
+    transform: scale(1);
+  }
+}
+
 .logo {
   font-size: 3rem;
   font-weight: bolder;
@@ -32,6 +96,9 @@
 .menu a {
   text-decoration: none;
   color: #b2efec;
+}
+.menu a:hover {
+  color: #f0f0f0;
 }
 
 .menu-button-container {
@@ -231,21 +298,7 @@ footer .fa-linkedin {
   bottom: 32rem;
   left: 10rem;
 }
-footer .fa-github:hover {
-  animation-name: ruota;
-  animation-duration: 500ms;
-  animation-fill-mode: forwards;
-}
-@keyframes ruota {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-    color: #11b7af;
-  }
-}
-footer .fa-linkedin:hover {
+footer .fa-github:hover, footer .fa-linkedin:hover {
   animation-name: ruota;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
@@ -285,70 +338,6 @@ footer .fa-linkedin:hover {
     justify-content: center;
   }
 }
-footer ::-moz-placeholder {
-  font-family: "Barlow", sans-serif;
-  letter-spacing: 3px;
-  font-weight: 600;
-}
-footer input,
-footer textarea, footer button, footer ::placeholder {
-  font-family: "Barlow", sans-serif;
-  letter-spacing: 3px;
-  font-weight: 600;
-}
-
-.card-1-container, .card-2-container, .card-3-container, .card-4-container {
-  box-shadow: 2px 2px 8px #11b7af;
-  background-color: rgba(3, 57, 54, 0.5);
-  width: 30rem;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-}
-.card-1-container p, .card-2-container p, .card-3-container p, .card-4-container p {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
-.card-1-container .card-img, .card-2-container .card-img, .card-3-container .card-img, .card-4-container .card-img {
-  width: 20rem;
-}
-.card-1-container .card-img img, .card-2-container .card-img img, .card-3-container .card-img img, .card-4-container .card-img img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.card-1-container button, .card-2-container button, .card-3-container button, .card-4-container button {
-  margin: 2rem auto;
-  padding: 0.5rem;
-  background-color: #405a96;
-  border: none;
-  border-radius: 5px;
-  width: 15rem;
-}
-.card-1-container button a, .card-2-container button a, .card-3-container button a, .card-4-container button a {
-  text-decoration: none;
-  color: #b2efec;
-  text-shadow: 1px 1px 5px black;
-  letter-spacing: 3px;
-}
-.card-1-container button:hover, .card-2-container button:hover, .card-3-container button:hover, .card-4-container button:hover {
-  animation-name: button;
-  animation-duration: 500ms;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-}
-@keyframes button {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  0% {
-    transform: scale(1);
-  }
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -395,7 +384,7 @@ header h2 {
   margin: 2rem 0;
 }
 header p {
-  margin-top: 5rem;
+  padding: 1rem;
 }
 header .header-title {
   position: relative;
@@ -411,13 +400,14 @@ header .header-title {
     top: 0rem;
   }
 }
-header p {
+header section {
+  max-width: 60rem;
   position: relative;
-  animation-name: paragraph;
+  animation-name: section;
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
-@keyframes paragraph {
+@keyframes section {
   0% {
     right: -120rem;
   }
@@ -446,7 +436,6 @@ header p {
     font-size: 3rem;
   }
   header p {
-    margin-top: 8rem;
     line-height: 2.5rem;
   }
   .sub-title {
@@ -470,12 +459,14 @@ header p {
       left: -10rem;
     }
   }
-  @keyframes paragraph {
+  @keyframes section {
     0% {
       right: -160rem;
+      top: 5rem;
     }
     100% {
-      right: -25rem;
+      right: -23rem;
+      top: 5rem;
     }
   }
   .skills img {

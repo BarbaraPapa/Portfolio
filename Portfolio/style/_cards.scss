@@ -1,5 +1,3 @@
-// @import "mixin";
-
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -39,7 +37,7 @@
   .fa-react {
     @include icon($color-react, 11rem);
   }
-  .fa-node-js{
+  .fa-node-js {
     @include icon($color-node-js, 6rem);
   }
 }
@@ -51,16 +49,15 @@
     @include icon($color-sass, 13rem);
   }
   .fa-square-js {
-    @include icon($color-js, 8rem)
+    @include icon($color-js, 8rem);
   }
 }
-
 
 // media query -----
 
 // tablet
-@media (min-width: 768px){
-  .container{
+@media (min-width: 768px) {
+  .container {
     margin: 10rem 0;
   }
 }

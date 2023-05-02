@@ -4,8 +4,6 @@
   color: $primary-dark;
 }
 
-//todo  aggiungere effetto hover italic piu cambio colore su items menu 
-//todo  aggiungere icons<...>  
 .top-nav {
   display: flex;
   flex-direction: row;
@@ -33,6 +31,9 @@
   a {
     text-decoration: none;
     color: $primary-ligth;
+  }
+  a:hover {
+    color: $ligth;
   }
 }
 
