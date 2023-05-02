@@ -106,7 +106,7 @@
     transition: height 500ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   #menu-toggle:checked ~ .menu li {
-    border: 1px solid #3f3f3f;
+    border: 1px solid #5377CA;
     height: 2.5em;
     padding: 0.5em;
     transition: height 500ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -117,10 +117,7 @@
     padding: 0.5em 0;
     width: 100%;
     color: #f0f0f0;
-    background-color: #1c1c1c;
-  }
-  .menu > li:not(:last-child) {
-    border-bottom: 1px solid #444;
+    background-color: #043c39;
   }
 }
 .container {
@@ -133,54 +130,60 @@
 
 .card-1-container .fa-html5 {
   color: #e3511c;
+  bottom: 13rem;
   position: relative;
   left: 23rem;
-  bottom: 13rem;
 }
 .card-1-container .fa-css3-alt {
   color: #1780ca;
+  bottom: 8rem;
   position: relative;
   left: 23rem;
-  bottom: 8rem;
 }
 
-.card-2-container .fa-html5 {
-  color: #e3511c;
-  position: relative;
-  left: 23rem;
+.card-2-container .fa-sass {
+  color: #c56393;
   bottom: 13rem;
-}
-.card-2-container .fa-css3-alt {
-  color: #1780ca;
   position: relative;
   left: 23rem;
+}
+.card-2-container .fa-react {
+  color: #61dbfb;
   bottom: 8rem;
+  position: relative;
+  left: 23rem;
 }
 
-.card-3-container .fa-html5 {
-  color: #e3511c;
+.card-3-container .fa-sass {
+  color: #c56393;
+  bottom: 16rem;
   position: relative;
   left: 23rem;
-  bottom: 13rem;
 }
-.card-3-container .fa-css3-alt {
-  color: #1780ca;
+.card-3-container .fa-react {
+  color: #61dbfb;
+  bottom: 11rem;
   position: relative;
   left: 23rem;
-  bottom: 8rem;
+}
+.card-3-container .fa-node-js {
+  color: #80c829;
+  bottom: 6rem;
+  position: relative;
+  left: 23rem;
 }
 
-.card-4-container .fa-html5 {
-  position: relative;
-  left: 23rem;
+.card-4-container .fa-sass {
+  color: #c56393;
   bottom: 13rem;
-  color: #e3511c;
-}
-.card-4-container .fa-css3-alt {
-  color: #1780ca;
   position: relative;
   left: 23rem;
+}
+.card-4-container .fa-square-js {
+  color: #f7df1e;
   bottom: 8rem;
+  position: relative;
+  left: 23rem;
 }
 
 @media (min-width: 768px) {
@@ -207,6 +210,7 @@ footer textarea, footer button {
   margin: 1rem 0;
   padding: 0.7rem;
   border: none;
+  resize: none;
 }
 footer ::-moz-placeholder {
   color: #043c39;
