@@ -45,9 +45,7 @@ footer {
     left: 10rem;
   }
 
-
-  // todo creare placeholder per animazione!!!
-  .fa-github:hover{
+  .fa-github:hover, .fa-linkedin:hover{
     animation-name: ruota;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
@@ -57,18 +55,6 @@ footer {
       100%{transform: rotate(360deg); color: $primary;}
     } 
   }
-
-  .fa-linkedin:hover{
-    animation-name: ruota;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-
-    @keyframes ruota{
-      0%{transform: rotate(0deg); }
-      100%{transform: rotate(360deg); color: $primary;}
-    } 
-  }
-
 }
 
 
