@@ -1,0 +1,167 @@
+
+@font-face {
+  font-family: "heebo";
+  src: url(./Heebo-VariableFont_wght.ttf);
+}
+
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  background-color: #f7e0ce;
+  font-family: "heebo", Arial, Helvetica, sans-serif;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* questo si puo migliorare aggiungendo una classe "color-titles" agli elementi */
+h1,
+.subtitle h2,
+.subtitle h3,
+.titleContainer,
+.aboutTitle,
+.contactTitle {
+  color: #884f1b;
+}
+img {
+  border-radius: 5px;
+}
+
+/*-- Header-- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5efea;
+  position: fixed;
+  top: 0;
+  max-width: 1200px;
+}
+header img {
+  width: 6%;
+}
+
+/*-- Nav -- */
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  padding: 20px;
+}
+nav a:hover {
+  color: #8d4e12;
+}
+nav li {
+  list-style-type: none;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+}
+
+/* -- Title -- */
+.title {
+  background-image: url(../img/title.webp);
+  height: 700px;
+  margin-top: 130px;
+  background-size: cover;
+  background-position: top;
+}
+h1 {
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  font-size: 80px;
+}
+
+/* -- Subtitle --*/
+.subtitle {
+  text-align: center;
+  font-size: 30px;
+}
+.subtitle h2 {
+  margin: 0;
+  margin-top: 100px;
+}
+.subtitle h3 {
+  margin: 0;
+  margin-bottom: 80px;
+}
+
+/* -- Articles -- */
+.education {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.education img {
+  width: 30%;
+}
+.education p {
+  width: 30%;
+  font-size: 20px;
+}
+
+.training {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.training img {
+  width: 30%;
+}
+.training p {
+  width: 30%;
+  font-size: 20px;
+}
+
+/* card title */
+.titleContainer {
+  text-align: center;
+  font-size: 42px;
+  margin: 0;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+/* -- Card container -- */
+.cardContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.cardContainer img {
+  width: 100%;
+}
+.cardContainer div {
+  padding: 10px;
+  text-align: center;
+  width: 25%;
+}
+.cardContainer a {
+  text-decoration: none;
+  color: black;
+}
+.cardContainer h4:hover {
+  background-color: #e6b78c;
+}
+.cardContainer h4 {
+  padding: 5px;
+}
+
+/* -- footer --*/
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e6b78c;
+  margin-top: 60px;
+  height: 100px;
+}
+footer img {
+  width: 4%;
+}

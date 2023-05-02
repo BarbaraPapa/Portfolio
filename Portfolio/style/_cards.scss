@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.card-1-container {
+  @extend %card-style;
+
+// todo  creare mixin con variabili color left e button?
+  .fa-html5 {
+    color: #e3511c;
+    position: relative;
+    left: 23rem;
+    bottom: 13rem;
+  }
+
+  .fa-css3-alt {
+    color: #1780ca;
+    position: relative;
+    left: 23rem;
+    bottom: 8rem;
+  }
+
+}
+
+.card-2-container {
+  @extend %card-style;
+
+// todo  creare mixin con variabili color left e button?
+  .fa-html5 {
+    color: #e3511c;
+    position: relative;
+    left: 23rem;
+    bottom: 13rem;
+  }
+
+  .fa-css3-alt {
+    color: #1780ca;
+    position: relative;
+    left: 23rem;
+    bottom: 8rem;
+  }
+
+}
+
+.card-3-container {
+  @extend %card-style;
+
+// todo  creare mixin con variabili color left e button?
+  .fa-html5 {
+    color: #e3511c;
+    position: relative;
+    left: 23rem;
+    bottom: 13rem;
+  }
+
+  .fa-css3-alt {
+    color: #1780ca;
+    position: relative;
+    left: 23rem;
+    bottom: 8rem;
+  }
+
+}
+
+.card-4-container {
+  @extend %card-style;
+
+// todo  creare mixin con variabili color left e button?
+  .fa-html5 {
+    position: relative;
+    left: 23rem;
+    bottom: 13rem;
+    color: $color-html;
+  }
+
+  .fa-css3-alt {
+    color: $color-css;
+    position: relative;
+    left: 23rem;
+    bottom: 8rem;
+  }
+
+}
+
+
+// media query -----
+
+// tablet
+@media (min-width: 768px){
+  .container{
+    margin: 10rem 0;
+  }
+}

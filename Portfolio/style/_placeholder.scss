@@ -1,0 +1,59 @@
+// font-form
+%font-form{
+    font-family: "Barlow", sans-serif;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+// cards----
+%card-style {
+    box-shadow: 2px 2px 8px $primary;
+    background-color: $primary-dark-transp;
+    width: 30rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    p {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+    .card-img {
+      width: 20rem;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    button {
+      margin: 2rem auto;
+      padding: 0.5rem;
+      background-color: $secondary-dark;
+      border: none;
+      border-radius: 5px;
+      width: 15rem;
+      a {
+        text-decoration: none;
+        color: $primary-ligth;
+        text-shadow: 1px 1px 5px black;
+        letter-spacing: 3px;
+      }
+    }
+    button:hover {
+      animation-name: button;
+      animation-duration: 500ms;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+      @keyframes button {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        0% {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+

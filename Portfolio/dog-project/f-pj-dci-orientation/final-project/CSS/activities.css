@@ -1,0 +1,42 @@
+/* ------- ACTIVITIES PAGE --------------- */
+
+.titleActivities {
+    font-size: 50px;
+    margin-top: 130px;
+    margin-bottom: 100px;
+    padding: 0;
+  }
+  
+  article span {
+    font-weight: bold;
+    font-size: 22px;
+  }
+  
+  .cardLeft {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .cardLeft img {
+    width: 30%;
+  }
+  .cardLeft p {
+    width: 34%;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  
+  .cardRight {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  .cardRight img {
+    width: 30%;
+  }
+  .cardRight p {
+    width: 34%;
+    font-size: 20px;
+    margin-right: 50px;
+  }
+  

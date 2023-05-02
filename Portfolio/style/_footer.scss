@@ -1,0 +1,113 @@
+
+footer {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+
+  h2{
+    color: $secondary;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+  }
+
+  input, button{
+    width: 33rem;
+  }
+
+  input,
+  textarea, button {
+    background-color: $primary;
+    @extend %font-form; 
+    margin: 1rem 0;
+    padding: 0.7rem;
+    border: none;
+  }
+
+  ::placeholder, button{
+    @extend %font-form;
+    color: $primary-dark;
+  }
+
+  .fa-github, .fa-linkedin{
+    color: $secondary;
+  }
+
+  .fa-github{
+    position: relative;
+    bottom: 32rem;
+    right: 10rem;
+  }
+
+  .fa-linkedin{
+    position: relative;
+    bottom: 32rem;
+    left: 10rem;
+  }
+
+
+  // todo creare placeholder per animazione!!!
+  .fa-github:hover{
+    animation-name: ruota;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+
+    @keyframes ruota{
+      0%{transform: rotate(0deg); }
+      100%{transform: rotate(360deg); color: $primary;}
+    } 
+  }
+
+  .fa-linkedin:hover{
+    animation-name: ruota;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+
+    @keyframes ruota{
+      0%{transform: rotate(0deg); }
+      100%{transform: rotate(360deg); color: $primary;}
+    } 
+  }
+
+}
+
+
+// media query -----
+
+// tablet
+@media (min-width: 768px){
+
+  footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding: 3rem;
+
+    #contact{
+      margin-right: 8rem;
+      font-size: $font-m;
+    }
+
+    .fa-github{
+      top: 15rem;
+      right: 52rem;
+    }
+  
+    .fa-linkedin{
+      top: 7rem;
+      left: -55rem;
+    }
+  }
+
+}
+
+// desktop
+@media (min-width: 1024px){
+
+footer{
+  justify-content: center;
+}
+
+}
+
+
+

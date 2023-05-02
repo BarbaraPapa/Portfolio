@@ -1,0 +1,21 @@
+/* ------------ABOUT PAGE ---------------*/
+
+.aboutTitle {
+    text-align: center;
+    font-size: 45px;
+    margin-top: 182px;
+  }
+  .aboutParagraph {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  .aboutParagraph p {
+    text-align: center;
+    font-size: 20px;
+  }
+  .aboutParagraph div {
+    font-weight: bold;
+  }
+  .aboutFooter {
+    margin-top: 170px;
+  }
