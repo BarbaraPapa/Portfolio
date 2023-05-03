@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
-footer ::-moz-placeholder {
-  font-family: "Barlow", sans-serif;
-  letter-spacing: 3px;
-  font-weight: 600;
-}
 footer ::placeholder, footer input,
 footer textarea, footer button {
   font-family: "Barlow", sans-serif;
@@ -28,8 +23,7 @@ footer textarea, footer button {
 }
 .card-4-container .card-img img, .card-3-container .card-img img, .card-2-container .card-img img, .card-1-container .card-img img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .card-4-container button, .card-3-container button, .card-2-container button, .card-1-container button {
   margin: 2rem auto;
@@ -278,9 +272,6 @@ footer textarea, footer button {
   padding: 0.7rem;
   border: none;
   resize: none;
-}
-footer ::-moz-placeholder {
-  color: #043c39;
 }
 footer ::placeholder, footer button {
   color: #043c39;

@@ -3,6 +3,5 @@
 
 
 
-![Alt text](screen-portfolio.png)
-
-![Alt text](screen-projects.png)
+![Alt text](img-readme/screen-portfolio.png)
+![Alt text](img-readme/screen-projects.png)
